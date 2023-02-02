@@ -1,0 +1,19 @@
+Documentación del programa
+Este programa permite dividir un archivo PDF en var
+
+ios archivos más pequeños, cada uno con un número específico de páginas.
+
+Requisitos
+Python 3.x instalado en el sistema
+La biblioteca PyPDF2 instalada
+Uso
+Abrir una terminal y ejecutar el programa con python cut-pdf.py.
+Se pedirá que se ingrese la ruta del archivo PDF a dividir.
+Se pedirá que se ingrese el número de páginas deseado para cada archivo dividido.
+El programa dividirá el archivo PDF en varios archivos PDF más pequeños, con el nombre "split_x.pdf", donde x es un número incremental para cada archivo dividido.
+Funcionamiento interno
+El programa utiliza la biblioteca PyPDF2 para leer y escribir los archivos PDF. Se abre el archivo PDF original en modo de lectura binaria (rb) y se utiliza la clase PdfFileReader para leer su contenido. Luego, se divide el contenido en varios bloques, cada uno con un número específico de páginas, y se escriben cada bloque en un archivo PDF separado con la clase PdfFileWriter.
+
+Consideraciones
+El programa sólo funciona con archivos PDF y no está diseñado para dividir archivos de otros tipos.
+La calidad y formato de las páginas divididas pueden variar en comparación con el archivo original, dependiendo de la versión y configuración de la biblioteca PyPDF2 utilizada.
