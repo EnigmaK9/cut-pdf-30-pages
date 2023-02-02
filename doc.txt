@@ -1,7 +1,5 @@
 Documentación del programa
-Este programa permite dividir un archivo PDF en var
-
-ios archivos más pequeños, cada uno con un número específico de páginas.
+Este programa permite dividir un archivo PDF en varios archivos más pequeños, cada uno con un número específico de páginas.
 
 Requisitos
 Python 3.x instalado en el sistema
